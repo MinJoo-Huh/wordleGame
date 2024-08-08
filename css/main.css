@@ -26,6 +26,9 @@ main {
   justify-content: center;
   align-items: center;
 
+  font-size: xx-large;
+  font-weight: bolder;
+
   border: 2.5px solid #d2d4d9;
   width: 60px;
   height: 60px;
