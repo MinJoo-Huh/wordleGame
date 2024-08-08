@@ -77,24 +77,37 @@ function appStart() {
         `.board-block[data-index='${attempts}${i}']`
       ); // block의 정보를 가져온다. - 아예 밖에 빼놓으면 안되나...?
 
+      const keyBlock = document.querySelector(
+        `.keyboard-block[data-key='${block.innerText}']`
+      );
+
       const letter = block.innerText; // 입력한 문자
       const correct_letter = correct_answer[i]; // 정답
 
       // 정답확인
       if (letter === correct_letter) {
+        // 정답
         correct_num++;
+        // 배경색 바꾸기 - 녹색
         block.style.background = "#6AAA64";
+        keyBlock.style.background = "#6AAA64";
 
-        //block.style = "background-color='#6AAA64'; ";
+        // 360 회전
         let keyframes = [
           { transform: "rotate(0) scale(1)" },
           { transform: "rotateX(360deg) scale(1)" },
         ];
         let options = { duration: 1000, iterations: 1 };
         block.animate(keyframes, options);
-      } else if (correct_answer.includes(letter))
+      } else if (correct_answer.includes(letter)) {
+        // 있지만, 위치가 다름.
         block.style.background = "#C9B458";
-      else block.style.background = "#787C7E";
+        keyBlock.style.background = "#C9B458";
+      } else {
+        // 오답
+        block.style.background = "#787C7E";
+        keyBlock.style.background = "#787C7E";
+      }
 
       block.style.color = "White";
 
