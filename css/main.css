@@ -1,0 +1,32 @@
+main {
+  display: flex;
+  flex-direction: column; /*board-row를 colum한다.*/
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.timer {
+  font-size: large;
+  font-weight: bold;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.board-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 2.5px solid #d2d4d9;
+  width: 60px;
+  height: 60px;
+}

@@ -1,0 +1,63 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px 20px 10px 20px;
+  border-bottom: 1px solid #dedede;
+
+  position: relative;
+}
+
+h1 {
+  font-family: "Kalnia Glaze", serif;
+  margin: 0 auto;
+
+  position: absolute;
+  left: 46%;
+}
+
+.info-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100vw;
+}
+
+.info-bar__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-bar__left img {
+  width: 30px;
+  height: 30px;
+}
+
+.info-bar__right {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.info-bar__right img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.info_bar__right-subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+
+  border: 1px solid black;
+  border-radius: 25px;
+
+  height: 45px;
+  width: 180px;
+}
