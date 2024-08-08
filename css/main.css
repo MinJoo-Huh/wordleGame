@@ -8,7 +8,7 @@ main {
   margin-top: 20px;
 }
 
-.timer {
+#timer {
   font-size: large;
   font-weight: bold;
 }
